@@ -3,39 +3,5 @@
 .App{
     height: 100vh;
     background: $clr-secondary;
-    .navbar {
-        background: $clr-background;
-        color: $clr-primary;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 2vw 0 2vw;
-        .title{
-            display: flex;
-            .logo{
-                height: 3.2rem;
-                padding-right: 1vw;
-            }
-            h1{
-                font-size: 2.5rem;
-            }
-        }
-        .cartWidget{
-            display: flex;
-            padding-right: 5vw;
-            align-items: center;
-            .cart {
-                height: 3vw;
-            }
-            .cantidadArticulos{
-                text-align: center;
-                height: 2rem;
-                width: 2rem;
-                border-radius: 100px;
-                font-size: 1.2rem;
-                background-color: $clr-higlights;
-            }
-        }
-    }
 }
 

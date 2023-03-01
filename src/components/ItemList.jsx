@@ -1,9 +1,69 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
+import Item from './Item'
+import data from '../data/data'
 
 const ItemList = () => {
-  return (
-    <div>ItemList</div>
-  )
-}
+ 
+  const [products, setProducts] = useState([]);
 
-export default ItemList
+  
+  const getProducts = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (true) {
+        resolve(data);
+      } else {
+        reject(alert('No podemos mostrar los productos en este momento'));
+      }
+    }, 2000);
+  });
+
+  
+  const getProductsFromDB = async () => {
+    try {
+      const result = await getProducts;
+      setProducts(result);
+    } catch (error) {
+      console.error(error);
+      alert('No podemos mostrar los productos en este momento');
+    }
+  };
+
+  useEffect(() => {
+    getProductsFromDB();
+  });
+
+  return (
+    <div className="product-list-container row row-cols-1 row-cols-md-4 g-4">
+      {
+        
+        products.length ? ( 
+          <>
+            {
+
+              products.map((product) => {
+                return (
+                  <Item
+                    name={product.name}
+                    thumbnail={product.thumbnail}
+                    price={product.price}
+                    stock={product.stock}
+                    id={product.id}
+                  />
+                );
+              })
+            }
+          </>
+        ) : (
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Cargando Productos...</span>
+              </div>
+              <span class="h5">Cargando Productos...</span>
+            </div>
+        ) 
+      }
+    </div>
+  );
+};
+
+export default ItemList;

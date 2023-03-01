@@ -1,0 +1,95 @@
+@import './styles/colors.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navbar {
+    background: $clr-background;
+    color: $clr-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw 0 2vw;
+    .title{
+        display: flex;
+        .logo{
+            height: 3.2rem;
+            padding-right: 1vw;
+        }
+        h1{
+            color: $clr-primary;
+            font-size: 2.5rem;
+        }
+    }
+    .cartWidget{
+        display: flex;
+        padding-right: 5vw;
+        align-items: center;
+        .cart {
+            height: 3vw;
+        }
+        .cantidadArticulos{
+            text-align: center;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100px;
+            font-size: 1.2rem;
+            background-color: $clr-higlights;
+        }
+    }
+}
+
+.AddToCart{
+    margin: auto;
+    font-size: 1em;
+    width: 10em;
+
+    flex-direction: column;
+    .ItemCount{
+        border: 1px solid $clr-primary;
+        border-radius: 6px;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        .countBtn{
+            width: 2.5em;
+            height: 2.5em;
+        }
+    }
+    .countBtn {
+        color: $clr-primary;
+        margin: 0.2em;
+        .bi-cart{
+            margin-left: 0.5em;
+        }
+    }
+    .countBtn:hover {
+        cursor: pointer; 
+        background-color: $clr-higlights;           
+    }
+    .countBtn:disabled { 
+        color: $clr-background;
+        border: none;         
+    }
+    .agregarCarrito{
+        border: 1px solid $clr-primary;
+    } 
+}
+.countBtn {
+    border: 1px solid $clr-primary;
+    border-radius: 6px;
+    color: $clr-primary;
+    margin: 0.2em;
+}

@@ -1,14 +1,13 @@
 import React from 'react'
+import ItemList from './ItemList'
 
 const ItemListContainer = () => {
   return (
-    <div className='greeting' style={{
+    <div className='row ItemCount' style={{
       textAlign:'center',
-      margin:'10vw'
+      margin:'2vw'
     }}>
-      <h2>¡Bienvenido!</h2>
-      <p>Nuestro sitio está en construcción. </p>
-      <p>Pronto podrás ver nuestros productos.</p>
+      <ItemList />
     </div>
   )
 }
