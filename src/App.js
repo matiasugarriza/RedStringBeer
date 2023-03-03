@@ -1,7 +1,4 @@
-
 import ItemListContainer from './components/ItemListContainer';
-
-import './styles/app.css';
 
 function App() {
   return (

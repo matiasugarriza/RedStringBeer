@@ -1,11 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import data from '../data/data'
+
 const Menu = () => {
+  
   return (
-    <Link to={`/products`}>
-        <div>Productos</div>
+    <div className="menu">
+    <Link to={`/products`} className="opcion">
+        <h5>Productos</h5>
     </Link>
+        {
+          data.map((product) => {
+            return (
+            <Link to={`/category/${product.category}`} className="opcion">
+              <h5>{product.category}</h5>
+            </Link>
+            )})
+        }
+    </div>
   )
 }
 

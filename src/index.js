@@ -7,8 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 
-import './index.css';
+import './styles/index.css';
 import NavBar from './components/NavBar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,9 +22,9 @@ root.render(
         <Route exact path="/" element={<App />} />
         <Route exact path="/products" element={<ItemListContainer />} />
         <Route exact path="/products/:productId" element={<ItemDetailContainer />} />
+        <Route exact path="/category/:categoryId" element={<ItemListContainer />} />
       </Routes>
     </BrowserRouter>
-
   </React.StrictMode>
 );
 

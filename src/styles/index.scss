@@ -1,4 +1,4 @@
-@import './styles/colors.scss';
+@import './colors.scss';
 
 body {
   margin: 0;
@@ -14,7 +14,16 @@ code {
     monospace;
 }
 
-
+.App{
+    background: $clr-secondary;
+}
+.justify-content-center {
+    margin: auto;
+    margin-top: 20vh;
+    .spinner-border{
+       margin-right: 2vw;
+    }
+}
 .navbar {
     background: $clr-background;
     color: $clr-primary;
@@ -23,29 +32,53 @@ code {
     justify-content: space-between;
     padding: 0 2vw 0 2vw;
     .title{
+        text-decoration: none;
         display: flex;
+        align-items: center;
+        margin-bottom: 1vh;
         .logo{
-            height: 3.2rem;
+            display: inline;
+            height: 3rem;
             padding-right: 1vw;
         }
         h1{
+            display: inline;
             color: $clr-primary;
-            font-size: 2.5rem;
+            font-size: 2rem;
+            padding-top: 1vh;
+        }
+    }
+    .menu {
+        display: flex;
+        .opcion{
+            color: $clr-primary;
+            text-decoration: none;
+        }
+        h5 {            
+            margin: 0;
+            padding: 1.5vw;
+        }
+        h5:hover {
+            background-color: $clr-higlights;
         }
     }
     .cartWidget{
         display: flex;
+        padding-top: 1vh;
         padding-right: 5vw;
         align-items: center;
         .cart {
-            height: 3vw;
+            height: 2.5rem;
         }
         .cantidadArticulos{
+            position: relative;
             text-align: center;
-            height: 2rem;
-            width: 2rem;
+            left: -0.5rem;
+            top: -0.5rem;
+            height: 1.6rem;
+            width: 1.6rem;
             border-radius: 100px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             background-color: $clr-higlights;
         }
     }
@@ -75,10 +108,7 @@ code {
             margin-left: 0.5em;
         }
     }
-    .countBtn:hover {
-        cursor: pointer; 
-        background-color: $clr-higlights;           
-    }
+
     .countBtn:disabled { 
         color: $clr-background;
         border: none;         
@@ -92,4 +122,43 @@ code {
     border-radius: 6px;
     color: $clr-primary;
     margin: 0.2em;
+}
+.countBtn:hover {
+    cursor: pointer; 
+    background-color: $clr-higlights;           
+}
+.item { 
+    text-decoration: none;
+    margin: auto;
+    .card-body{
+       .card-title{
+        color: $clr-blueviolet;
+       }
+    }
+}
+.item:hover{
+    background-color: antiquewhite;
+}
+
+.itemDetail  {
+    border: 1px solid $clr-primary;
+    border-radius: 10px;
+    display: flex;
+    align-content: space-between;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    width: 50vw;
+    .productThumbnail{
+        height: 50vh;
+    }
+    .productData{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.btnVolver {
+    width: 50vw;
+    margin: auto;
+    display: block;
 }

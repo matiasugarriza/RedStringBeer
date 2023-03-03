@@ -4,8 +4,9 @@ import { useParams } from 'react-router-dom'
 
 import Item from './Item'
 import data from '../data/data'
-const ItemList = () => {
-  const { categoryId } = useParams()
+
+const Category = () => {
+    const { categoryId } = useParams()
     const categoryProducts = data.find((product) => product.category === categoryId)
     const [products, setProducts] = useState([]);
     const datosProductos = () => {
@@ -76,6 +77,7 @@ const ItemList = () => {
       }
     </div>
   );
-};
+}
 
-export default ItemList;
+
+export default Category
