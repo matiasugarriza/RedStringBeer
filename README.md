@@ -5,6 +5,10 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal.
 ## Actualizaciones
 
 * *Versión Actual*
+    * Entrega Final:
+        * Agregar ruta para cart. ✔
+        * Crear función para agregar al carrito. ✔
+
     * Actividad 1:
         * Crear componente ItemCount ✔
         * Crear función para que sume o reste.✔
@@ -29,7 +33,15 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal.
 
 ### Objetivos y Mejoras por hacer
  
+* Entrega Final
+    * Borrar este Readme y generar uno nuevo según corresponde. Quizás se pueda agregar la info de actulizaciones.
+    * Grabar video mostrando navegabilidad
+    * Agregar CheckOut
+    * Vista de Carrito
+    * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por prop.
+    * Agregar link al carrito
 
+    
 
 
 * Pre Entrega 2:
@@ -49,4 +61,4 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal.
     * Revisar estilo del brand.
     * Mejorar las cards.
     * Ver si hace falta guardar info en LocalStorage.
-    * Crear función para agregar al carrito.
+

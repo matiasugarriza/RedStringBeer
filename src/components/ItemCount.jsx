@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../data/data'
+import { useCartContext } from './CartContext'
 
-const ItemCount = ({stock, initial, onAdd}) => {
+
+const ItemCount = ({stock, initial}) => {
+    const { addToCart } = useCartContext()
     const { productId } = useParams()
     const thisProduct = data.find((product) => product.id === productId)
     initial = 1
@@ -32,12 +35,13 @@ const ItemCount = ({stock, initial, onAdd}) => {
         <button 
         className='countBtn btn agregarCarrito'
         onClick={() => {
-            onAdd(Qty);
+            addToCart(thisProduct, Qty)
           }}
           disabled={stock === 0 ? true : null}
           >
             Agregar al Carrito
         </button>
+
     </div>
   )
 }
