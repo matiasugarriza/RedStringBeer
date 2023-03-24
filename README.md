@@ -1,10 +1,14 @@
-# Pre Entrega 1 - Matías Ugarriza
+# Entrega Final - Matías Ugarriza
 
 Este proyecto se trata de una tienda virtual de cervezas artesanal.
 
 ## Actualizaciones
 
 * *Versión Actual*
+    * Entrega Final:
+        * Agregar link al carrito ✔
+
+* 97fbe37 "CartContext" (branch EntregaFinal)
     * Entrega Final:
         * Agregar ruta para cart. ✔
         * Crear función para agregar al carrito. ✔
@@ -37,10 +41,10 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal.
     * Borrar este Readme y generar uno nuevo según corresponde. Quizás se pueda agregar la info de actulizaciones.
     * Grabar video mostrando navegabilidad
     * Agregar CheckOut
-    * Vista de Carrito
-    * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por prop.
-    * Agregar link al carrito
-
+    * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por props.
+    * Ver cómo usar el elemento ItemCount dentro de los productos del carrito
+    * Agregar un footer
+    * Que el carrito se pueda ver en cualquier pantalla y que se pueda ocultar.
     
 
 
