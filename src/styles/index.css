@@ -82,6 +82,44 @@ code {
   font-size: 1rem;
 }
 
+.cartView .cartTitle {
+  color: #DF2B50;
+  padding-top: 2vh;
+  margin: auto;
+  text-align: center;
+}
+.cartView .itemCartContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cartView .itemCartContainer .itemCartDetail {
+  width: 30vw;
+  height: 40vh;
+  border: 1px solid #DF2B50;
+  border-radius: 10px;
+  display: flex;
+  align-content: space-between;
+  margin: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 1vw;
+}
+.cartView .itemCartContainer .itemCartDetail .productThumbnail {
+  max-height: 10rem;
+  max-width: 10rem;
+  margin: 1vh;
+}
+.cartView .itemCartContainer .itemCartDetail h3 {
+  font-size: 1.5rem;
+}
+.cartView .itemCartContainer .itemCartDetail h4 {
+  color: #DF2B50;
+}
+.cartView .itemCartContainer .itemCartDetail .deleteItem {
+  right: 0;
+}
+
 .AddToCart {
   margin: auto;
   font-size: 1em;
@@ -127,11 +165,16 @@ code {
 }
 
 .item {
+  width: 15rem;
   text-decoration: none;
-  margin: auto;
+  margin: 1vh;
 }
 .item .card-body .card-title {
   color: #2B1D52;
+  font-size: 1.1rem;
+}
+.item .card-body .card-price {
+  color: #DF2B50;
 }
 
 .item:hover {
@@ -159,6 +202,7 @@ code {
 .btnVolver {
   width: 50vw;
   margin: auto;
+  margin-bottom: 2vh;
   display: block;
 }
 
@@ -170,4 +214,7 @@ code {
 .totalPrice {
   text-align: center;
   padding: 2vw;
+  margin: auto;
+  width: 50vw;
+  color: #DF2B50;
 }/*# sourceMappingURL=index.css.map */

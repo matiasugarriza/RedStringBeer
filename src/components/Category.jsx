@@ -15,10 +15,6 @@ const Category = () => {
             return(data)
         }
     }
-    
-    
-
-  
   const getProducts = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (true) {

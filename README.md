@@ -11,9 +11,12 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal desarrollada 
 ## Actualizaciones
 
 * *Versión Actual*
+
+* a8b20a8 "Firebase"
     * Entrega Final:
         * Agregar link al carrito ✔
         * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por prop. ✔
+        * Generar Orden de Compra ✔
 
 * 97fbe37 "CartContext" (branch EntregaFinal)
     * Entrega Final:
@@ -52,7 +55,7 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal desarrollada 
     * Agregar un footer.
     * Que el contenido del carrito se pueda ver en cualquier pantalla y que se pueda ocultar.
     * Tratar de corregir el delay al cargar el detalle del producto.
-    * Generar Orden de Compra
+
     
 
 

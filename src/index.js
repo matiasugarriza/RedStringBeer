@@ -26,7 +26,7 @@ root.render(
           <Route exact path="/products/:productId" element={<ItemDetailContainer />} />
           <Route exact path="/cart" element={<Cart />} />
           <Route exact path="/category/:categoryId" element={<ItemListContainer />} />
-        </Routes>
+        </Routes> 
       </CartContextProvider>
     </BrowserRouter>
   </React.StrictMode>
