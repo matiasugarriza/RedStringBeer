@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import data from '../data/data'
-
-const Menu = () => {
-  
+const Menu = ({data}) => {
   return (
     <div className="menu">
     <Link to={`/products`} className="opcion">

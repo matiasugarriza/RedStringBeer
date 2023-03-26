@@ -70,15 +70,16 @@ code {
   height: 2.5rem;
 }
 .navbar .cartWidget .cantidadArticulos {
+  font-weight: 700;
+  color: #DF2B50;
   position: relative;
   text-align: center;
-  left: -0.5rem;
-  top: -0.5rem;
+  left: -1.8rem;
+  top: 0.25rem;
   height: 1.6rem;
   width: 1.6rem;
   border-radius: 100px;
   font-size: 1rem;
-  background-color: #88CFF9;
 }
 
 .AddToCart {

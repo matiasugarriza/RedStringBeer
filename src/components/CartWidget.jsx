@@ -5,10 +5,12 @@ import { useCartContext } from './CartContext'
 
 const CartWidget = () => {
   const { totalProducts } = useCartContext();
+ 
   return (
-    <Link to={`/cart`} className='cartWidget'>
+    <Link to={`/cart`} className='cartWidget' style={{textDecoration:"none"}}>
       <img src={cart} alt="cart" className='cart'/>
-      <p className='cantidadArticulos'>{totalProducts() || '0'}</p>
+
+      <p className='cantidadArticulos'>{totalProducts() || ''}</p>
     </Link>
   )
 }

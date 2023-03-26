@@ -1,27 +1,25 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { getFirestore, doc , getDoc } from 'firebase/firestore'
 
-import ItemCount from './ItemCount'
-import data from '../data/data'
 
+import ItemDetail from './ItemDetail'
 
 const ItemDetailContainer = () => {
-    const { productId } = useParams()
-    const thisProduct = data.find((product) => product.id === productId)
+    const [data, setData] = useState({});
+    const { productId } = useParams();
+
+    useEffect(() => {
+      const querydb = getFirestore();
+      const queryDoc = doc(querydb, 'Items', productId);
+      getDoc(queryDoc)
+      .then(product => setData({id: product.id, ...product.data()}))
+    }, [productId])
+    
   return (
     <>
-      <div className='itemDetail'>    
-        <div>
-          <img src={thisProduct.thumbnail} alt={thisProduct.name} className='productThumbnail'></img>
-        </div>
-        <div className='productData'>
-          <h2>{thisProduct.name}</h2>
-          <h5>Categoría: {thisProduct.category}</h5>
-          <span>{thisProduct.description}</span>
-          <h4>Precio: ${thisProduct.price}</h4>
-          <ItemCount />
-        </div>
-      </div>
+      <ItemDetail data={data} />
       <Link to={`/products`}className='countBtn btn btnVolver'>Volver</Link>
     </>
   );

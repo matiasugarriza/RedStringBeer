@@ -71,15 +71,16 @@ code {
             height: 2.5rem;
         }
         .cantidadArticulos{
+            font-weight: 700;
+            color: $clr-primary;
             position: relative;
             text-align: center;
-            left: -0.5rem;
-            top: -0.5rem;
+            left: -1.80rem;
+            top: 0.25rem;
             height: 1.6rem;
             width: 1.6rem;
             border-radius: 100px;
             font-size: 1rem;
-            background-color: $clr-higlights;
         }
     }
 }

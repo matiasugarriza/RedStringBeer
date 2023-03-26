@@ -1,12 +1,19 @@
-# Entrega Final - Matías Ugarriza
+# Ecommerce Red String Beer
 
-Este proyecto se trata de una tienda virtual de cervezas artesanal.
+Este proyecto se trata de una tienda virtual de cervezas artesanal desarrollada en React JS.
+
+# Características
+* Catálogo de productos
+* Carrito de Compras
+* Confirmación del pedido
+
 
 ## Actualizaciones
 
 * *Versión Actual*
     * Entrega Final:
         * Agregar link al carrito ✔
+        * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por prop. ✔
 
 * 97fbe37 "CartContext" (branch EntregaFinal)
     * Entrega Final:
@@ -41,10 +48,11 @@ Este proyecto se trata de una tienda virtual de cervezas artesanal.
     * Borrar este Readme y generar uno nuevo según corresponde. Quizás se pueda agregar la info de actulizaciones.
     * Grabar video mostrando navegabilidad
     * Agregar CheckOut
-    * Que ItemListContainer haga el llamado a la api y pase la data a ItemList por props.
-    * Ver cómo usar el elemento ItemCount dentro de los productos del carrito
-    * Agregar un footer
-    * Que el carrito se pueda ver en cualquier pantalla y que se pueda ocultar.
+    * Ver cómo usar el elemento ItemCount dentro de los productos del carrito.
+    * Agregar un footer.
+    * Que el contenido del carrito se pueda ver en cualquier pantalla y que se pueda ocultar.
+    * Tratar de corregir el delay al cargar el detalle del producto.
+    * Generar Orden de Compra
     
 
 
