@@ -15,10 +15,14 @@ const Cart = () => {
     items: cartList.map(product => ({id: product.id, name: product.name, price: product.price, quantity: product.quantity})),
     total: totalPrice(),
   }
-  const handleClick = () => {
+  const checkOut = () => {
     const db = getFirestore()
     const ordersCollection = collection(db, 'orders')
     addDoc(ordersCollection, order)
+    removeList()
+    return(
+    alert("Felicidades. Tu compra fue confirmada!")
+      )
   }
 
   if (cartList.length === 0){
@@ -38,7 +42,7 @@ const Cart = () => {
       }
       </div>
       <h3 className='totalPrice'>Total: ${totalPrice()}</h3>
-      <button className='countBtn btn btnVolver' onClick={handleClick}>Comprar Carrito</button>
+      <Link to={`/`} className='countBtn btn btnVolver' onClick={checkOut}>Comprar Carrito</Link>
       <button className='countBtn btn btnVolver' onClick={removeList}>Vaciar Carrito</button>
       <Link to={`/products`}className='countBtn btn btnVolver'>Volver</Link>
       
