@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/RedStringBeer/static/css/main.b24af1ae.css",
+    "main.js": "/RedStringBeer/static/js/main.03ecb8d9.js",
+    "static/js/787.2d60f239.chunk.js": "/RedStringBeer/static/js/787.2d60f239.chunk.js",
+    "static/media/logo.png": "/RedStringBeer/static/media/logo.ead3b86134a9e520576b.png",
+    "static/media/cart.png": "/RedStringBeer/static/media/cart.73cf3d402898bc608791.png",
+    "index.html": "/RedStringBeer/index.html",
+    "main.b24af1ae.css.map": "/RedStringBeer/static/css/main.b24af1ae.css.map",
+    "main.03ecb8d9.js.map": "/RedStringBeer/static/js/main.03ecb8d9.js.map",
+    "787.2d60f239.chunk.js.map": "/RedStringBeer/static/js/787.2d60f239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24af1ae.css",
+    "static/js/main.03ecb8d9.js"
+  ]
+}
