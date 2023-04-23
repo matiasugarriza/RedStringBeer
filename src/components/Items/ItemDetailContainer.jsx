@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     
   return (
     <>
-      <ItemDetail data={data} />
+      <ItemDetail data={data}/>
       <Link to={`/products`}className='countBtn btn btnVolver'>Volver</Link>
     </>
   );

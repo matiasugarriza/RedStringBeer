@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getFirestore, collection , getDocs } from 'firebase/firestore'
-import CartWidget from './CartWidget'
+import CartWidget from '../Cart/CartWidget'
 import Menu from './Menu'
-import logo from '../logo.png';
+import logo from '../../logo.png';
 
 const NavBar = () => {
   const [data, setData] = useState([])

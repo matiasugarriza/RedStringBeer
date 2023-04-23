@@ -1,5 +1,5 @@
 import React from 'react'
-import cart from '../cart.png'
+import cart from '../../cart.png'
 import { Link } from 'react-router-dom'
 import { useCartContext } from './CartContext'
 

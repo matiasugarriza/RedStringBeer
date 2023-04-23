@@ -5,11 +5,12 @@ import './styles/index.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import Cart from './components/Cart';
-import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
-import CartContextProvider from './components/CartContext';
+import ItemDetailContainer from './components/Items/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
+import ItemListContainer from './components/Items/ItemListContainer';
+import CheckoutForm from './components/Cart/CheckoutForm';
+import NavBar from './components/Menu/NavBar';
+import CartContextProvider from './components/Cart/CartContext';
 import './firebase/config';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
           <Route exact path="/products/:productId" element={<ItemDetailContainer />} />
           <Route exact path="/cart" element={<Cart />} />
           <Route exact path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route exact path="/checkout" element={<CheckoutForm />} />
         </Routes> 
       </CartContextProvider>
     </BrowserRouter>

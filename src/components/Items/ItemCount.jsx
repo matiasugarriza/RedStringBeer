@@ -1,21 +1,22 @@
 import React, { useState } from 'react'
-import { useCartContext } from './CartContext'
+import { useCartContext } from '../Cart/CartContext'
 
 
-const ItemCount = ({data}) => {
-    const { addToCart } = useCartContext()
-    const initial = 1
+
+const ItemCount = ({data, initial}) => {
+    const { addToCart, cartList, deleteItem } = useCartContext()
     const [Qty, setQty] = useState(initial)
     const addProduct = (num) => {
         setQty(Qty + num);
       };
+    const isInCart = cartList.find(product => product.id === data.id) ? true:false;
   return (
     <div className='AddToCart'>
         <div className='ItemCount'>
             <button 
                 className='countBtn btn'
                 onClick={() => addProduct(-1)}
-                disabled={Qty === initial}
+                disabled={Qty === 1}
             >
             -
             </button>
@@ -35,9 +36,8 @@ const ItemCount = ({data}) => {
           }}
           disabled={data.stock === 0 ? true : null}
           >
-            Agregar al Carrito
+            {isInCart==true ? "Modificar Carrito" : "Agregar al Carrito"}
         </button>
-
     </div>
   )
 }

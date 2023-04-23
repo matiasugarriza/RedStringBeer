@@ -12,7 +12,7 @@ const CartContextProvider = ({ children }) => {
     };
     console.log('carrito: ', cartList)
     const removeList = () => setCartList([]); //Borra todos los productos del carrito
-    const isInCart = (id) => cartList.find(product => product.id === id) ? true:false; //Busca si ya existe el producto en el carrito
+     //Busca si ya existe el producto en el carrito
     const deleteItem = (id) => setCartList(cartList.filter(product => product.id !== id)); //Borra el producto seleccionado
     const totalPrice = () => {
         return cartList.reduce((prev, act) => prev + act.quantity * act.price, 0);
@@ -24,7 +24,6 @@ const CartContextProvider = ({ children }) => {
             cartList, 
             addToCart, 
             removeList, 
-            isInCart, 
             deleteItem, 
             totalPrice, 
             totalProducts,

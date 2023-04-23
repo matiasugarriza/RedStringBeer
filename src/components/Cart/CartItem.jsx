@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCartContext } from './CartContext'
+import ItemCount from '../Items/ItemCount'
 
 const CartItem = ({ product }) => {
   const { deleteItem } = useCartContext()
@@ -13,6 +14,7 @@ const CartItem = ({ product }) => {
           <h5>Precio: ${product.price}</h5>
           <h5>Cantidad: {product.quantity}</h5>
           <h4>Subtotal: ${product.quantity * product.price}</h4>
+          <ItemCount data={product} initial={product.quantity} />
           <button onClick={() => deleteItem(product.id)} className='countBtn btn deleteItem'>Eliminar</button>            
         </div>
         </div>
